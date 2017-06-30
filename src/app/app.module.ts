@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FacebookModule } from 'ngx-facebook';
+import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    FacebookModule.forRoot()
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
